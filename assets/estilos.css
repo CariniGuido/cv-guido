@@ -1,0 +1,33 @@
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-family: ' Geneva, Verdana, sans-serif;
+}
+.header__menuNav__item li a:hover {
+    color: rgb(128, 128, 128);
+}
+;
+
+
+
+.misRedes {
+
+    color: #000;
+}
+
+h3 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.1em rgb(255, 159, 50),
+		0 0 0.1em rgb(255, 153, 1)
+}
+
+.textos {
+    font-size: large;
+}
