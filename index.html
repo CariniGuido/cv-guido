@@ -12,6 +12,7 @@
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://kit.fontawesome.com/597a611f11.js" crossorigin="anonymous"></script>
   <script src="scroll.js"></script>
+  <script src="mostrarOcultar.js"> </script> 
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 
 
 
-         
+
           <a href="https://wa.me/542355419647" target="_blank">
             <img src="img/logowa.png" width="50" height="50" style="margin-left: 30px;">
           </a>
@@ -41,16 +42,16 @@
             </li>
             <li class="list-group-item border-warning">20-35797099-8 / Argentina</li>
             <li class="list-group-item border-warning">Brasil 115 Junín/ (CP 6000B)</li>
-            
+
           </ul>
           <Nav class="header__menuNav ">
             <UL class="header__menuNav__item">
-              <li> <a class="link" href="javascript: scrolltoId1()">Presentacíon</a></li>
-              <li> <a class="link" href="javascript: scrolltoId2()">Formación Académica</a></li>
-              <li> <a class="link" href="javascript: scrolltoId3()">Experiencia Laboral</a></li>
+              <li> <a class="link" href="javascript: scrolltoId('presentacion')">Presentacíon</a></li>
+              <li> <a class="link" href="javascript: scrolltoId('formacion')">Formación Académica</a></li>
+              <li> <a class="link" href="javascript: scrolltoId('experiencia')">Experiencia Laboral</a></li>
               <li><a class="link" href="https://app.netlify.com/teams/cariniguido/sites" class="card-link text-muted "
-                target="_blank">Portafolio</a></li>
-                <li><a class="link" href="#redAncla" class="text-muted">ir al footer</a></li>
+                  target="_blank">Portafolio</a></li>
+              <li><a class="link" href="#redAncla" class="text-muted">ir al footer</a></li>
             </UL>
           </Nav>
         </div>
@@ -58,8 +59,84 @@
       </div>
 
       <div class="col-md-8 border border-warning" style="background-color:rgb(255, 255, 255)">
-        <div class="row
-     vh-100">
+        <div class="row vh-100">
+
+           <button type="button" id="boton" onclick="mostrar()"> ver habilidades</button>
+           <button id="boton2" onclick="ocultar()">ocultar habilidades</button> 
+          <div class="caja-padre">
+            
+            <div class="contenedor">
+              
+              <h4>SKILLS</h4>
+
+              <div class="skills">
+
+                <div class="detalles">
+
+                  <span>HTML </span>
+                  <span>85%</span>
+
+                </div>
+
+                <div class="menu">
+                   <div id="html-menu"></div>
+                </div>
+
+              </div>
+
+              <div class="skills">
+
+                <div class="detalles">
+
+                  <span>CSS </span>
+                  <span>90%</span>
+
+                </div>
+
+                <div class="menu">
+                   <div id="css-menu"></div>
+                </div>
+
+              </div>
+
+
+              <div class="skills">
+
+                <div class="detalles">
+
+                  <span>JAVASCRIPT </span>
+                  <span>60%</span>
+
+                </div>
+
+                <div class="menu">
+                   <div id="javascript-menu"></div>
+                </div>
+
+              </div>
+
+              <div class="skills">
+
+                <div class="detalles">
+
+                  <span>REACT </span>
+                  <span>60%</span>
+
+                </div>
+
+                <div class="menu">
+                   <div id="react-menu"></div>
+                </div>
+
+              </div>
+
+              
+            </div>
+          </div>
+
+
+
+
           <h3 id="presentacion"> Presentacíon </h3>
 
           <p class="textos">Sólida experiencia en áreas comercial de ventas : atención a proveedores y clientes,
@@ -72,8 +149,7 @@
 
           </p>
         </div>
-        <div class="row
-    vh-100">
+        <div class="row vh-100">
           <h3 id="formacion"> Formación Académica </h3>
 
           <p class="textos">2008|Escuela Normal Superior.
@@ -100,13 +176,12 @@
 
 
         </div>
-        <div class="row
-   vh-100">
+        <div class="row vh-100">
           <h3 id="experiencia"> Experiencia Laboral </h3>
 
           <p class="textos">2015-2019 Profesor de Música . Escuelas y jardines– </p>
-           
-            <p class="textos"> 2019- 2021 |Equipo de prensa cámara de diputados.</p>
+
+          <p class="textos"> 2019- 2021 |Equipo de prensa cámara de diputados.</p>
 
           <p class="textos">2022|Venta de agropartes.
             Actividad: comercial.
